@@ -11,13 +11,13 @@ th, td {padding: 5px}
 </head>
 <body>
 <?php
-$servername = "https://millicentdaworth.azurewebsites.net";
+$servername = "millicentdagworth-mysqldbserver.mysql.database.azure.com";
 $username = "bgreene79";
 $password = "Bfreak79";
 $dbname = "author";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password);
+$con=mysqli_init(); mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL); mysqli_real_connect($con, "{millicentdagworth-mysqldbserver.mysql.database.azure.com}", "{bgreene79}", {Bfreak79}, {author}, 3306);
 
 // Check connection
 if ($conn->connect_error) {
