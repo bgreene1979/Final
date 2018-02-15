@@ -11,10 +11,10 @@ th, td {padding: 5px}
 </head>
 <body>
 <?php
-$servername = "https://millicentdaworth.azurewebsites.net";
-$username = "bgreene79";
-$password = "Bfreak79";
-$dbname = "author";
+$servername = "finalserver3.database.windows.net";
+$username = "final_admin";
+$password = "Password!";
+$dbname = "myDB";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
